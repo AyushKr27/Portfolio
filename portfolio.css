@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(to right, #040404, #242424, #656565);
+}
+
+.head {
+    margin: auto;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 600px;
+    position: relative;
+}
+
+.logo {
+    font-size: 20px;
+    border: 2px solid greenyellow;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 10px 100px;
+    font-family: 'Playfair Display', serif;
+}
+
+.firstname {
+    color: orange;
+}
+
+.lastname {
+    color: white;
+}
+
+ul {
+    display: flex;
+    font-weight: 600;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    margin: 0 10px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: rgb(243, 243, 143);
+    font-size: 16px;
+    position: relative;
+}
+
+ul li a::before {
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.8s ease;
+}
+
+ul li a:hover::before {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#content {
+    height: 80vh;
+    border: 2px greenyellow;
+    border-style: dashed;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.left {
+    flex: 2;
+    color: white;
+    padding: 150px 170px;
+    font-size: 1.5rem;
+}
+.left img{
+    width: 400px;
+}
+.leftdetails {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(to right, #040404, #242424, #656565);
+    
+}
+
+.ayush {
+    color: orange;
+}
+
+h1 {
+    letter-spacing: 5px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+
+h4 {
+    margin-top: 9px;
+}
+.right {
+    flex: 3;
+}
+
+#content .right img {
+    width: 50%;
+    position: relative;
+    z-index: 980;
+    cursor: pointer;
+    transition: 0.4s ease;
+    animation: floatImage 3s ease-in-out infinite;
+}
+
+.imgbox {
+
+    width: 480px;
+    height: 580px;
+    border: 2px solid orange;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    position: absolute;
+    top: 50px;
+    right: 230px;
+    position: absolute;
+}
+
+#content .right img:hover {
+    filter: drop-shadow(13px 6px 25px white);
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+#aboutmepage {
+    min-height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(to right, #040404, #242424, #656565);
+    color: white;
+    border-bottom: 2px dotted greenyellow;
+}
+
+.aboutme {
+    width: 80%;
+    margin: auto;
+}
+
+.aboutmeh3 {
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 29px;
+}
+
+.aboutmeheading1 {
+    color: orange;
+}
+
+.aboutmeborder>h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutmetopic {
+    width: 176px;
+    gap: 10px;
+    border-left: 2px solid greenyellow;
+    border-right: 2px solid greenyellow;
+}
+.aboutme1st {
+    border-bottom: 2px solid greenyellow;
+}
+
+.about1 {
+    color: orange;
+}
+
+.about2 {
+    color: orange;
+}
+
+.aboutme3 {
+    color: aqua;
+    border-bottom: 2px solid greenyellow;
+    font-weight: 600;
+}
+
+.aboutcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftabout {
+    flex: 2;
+}
+
+.rightabout {
+    flex: 3;
+}
+
+.rightabout img {
+    width: 120%;
+    animation: zoomIn 3s ease forwards infinite;
+}
+.aboutpara {
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.h32 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#portfoliopage {
+    min-height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(to right, #040404, #242424, #656565);
+    color: white;
+}
+
+.portfolio {
+    text-align: center;
+    margin: auto;
+}
+
+.portfolio>h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.portfoliotopic {
+    width: 200px;
+    border-left: 2px solid greenyellow;
+    border-right: 2px solid greenyellow;
+}
+
+.port1 {
+    text-transform: uppercase;
+    font-size: 29px;
+    color: orange;
+}
+
+.port2 {
+    text-transform: uppercase;
+    font-size: 29px;
+}
+
+.portcontent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.leftport {
+    border: 2px solid yellowgreen;
+    height: 400px;
+    width: 600px;
+}
+.latest{
+    font-size: 20px;
+}
+#l1{
+    color: orange;
+}
+#l2{
+    color: white;
+}
+.leftport img {
+    margin-top: 15px;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+}
+
+.imgcontent1 {
+    margin-top: 15px;
+}
+
+.imgdet {
+    border: 2px dotted aqua;
+    width: 260px;
+    margin-left: 170px;
+}
+
+.rightport {
+    text-transform: uppercase;
+    list-style: none;
+    margin-top: 80px;
+    height: 600px;
+    width: 700px;
+    border: 2px solid yellowgreen;
+}
+.rightport h1{
+    text-align: center;
+}
+.rightport h3{
+    color: aqua;
+    display: flex;
+    margin: 5px;
+}
+.rightport .skill h3{
+    margin: 20px auto;
+    padding: 10px;
+}
+.rightport .skill li{
+    margin: 15px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+}
+.html{
+    width: 86%;
+    animation: html 3s;
+
+}
+.css{
+    width: 74%;
+    animation: css 3s;
+
+}.javascript{
+    width: 62%;
+    animation: javascript 3s;
+
+}.java{
+    width: 79%;
+    animation: java 3s;
+
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 86%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 74%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 62%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 79%;
+    }
+}
+.myskill1 {
+    font-size: 25px;
+    color: orange;
+}
+
+.myskill2 {
+    font-size: 25px;
+}
+
+.foodhead {
+    font-size: 30px;
+    color: orange;
+}
+
+.order {
+    font-size: 30px;
+}
+
+#portfoliopage {
+    border-bottom: 2px groove yellowgreen;
+}
+
+#contactmepage {
+    height: 55vh;
+    margin: auto;
+}
+
+.contactbox .details {
+    color: white;
+}
+
+.contactbox>h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.contactdetails {
+
+    margin-top: 30px;
+    border-left: 2px solid yellowgreen;
+    border-right: 2px solid yellowgreen;
+    font-size: 29px;
+    width: 200px;
+    text-align: center;
+}
+
+.contactmecontent {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact {
+    color: orange;
+}
+
+.addressh {
+    text-transform: uppercase;
+    margin-left: 100px;
+    margin-top: 100px;
+    color: white;
+    font-size: 30px;
+}
+
+.address {
+    border-bottom: 2px solid aqua;
+}
+
+.addressp {
+    margin-top: 10px;
+    margin-left: 100px;
+    display: flex;
+    color: rgb(178, 167, 167);
+    width: 400px;
+    font-size: 20px;
+
+}
+
+.contacthead {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 30px;
+    color: white;
+}
+
+.contactn {
+    border-bottom: 2px solid aqua;
+}
+
+.number {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 100px;
+    color: rgb(178, 167, 167);
+}
+
+.contactright {
+    flex: 3;
+}
+
+.gmail {
+    color: white;
+    font-size: 20px;
+}
+
+.contactdetails {
+    text-transform: uppercase;
+    width: 291px;
+}
+
+.rightccont {
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.rightccont img {
+    width: 80px;
+}
+
+.ig {
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
